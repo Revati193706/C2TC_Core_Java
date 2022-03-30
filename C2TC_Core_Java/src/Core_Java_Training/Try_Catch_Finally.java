@@ -7,85 +7,65 @@ public class Try_Catch_Finally {
 		System.out.println("M11 Batch is very good");
 		
 		 int [] arr=new int[4]; 
-		
-		 /*	try {
-			 int i=arr[4]; 
-				
-				System.out.println("Inside Try Block");
-		}
-		
-		catch(ArrayIndexOutOfBoundsException e) 
-		{
-			
-			System.out.println("abcd");	// Same will be printed
-			
-			System.out.println(e);	// Exception name will be printed
-			
-			System.out.println();	// Wont print anything even exception name wont be printed
-		
-		}
-		
-		finally {
-			
-			System.out.println("Out Of Try-Catch");	
-			
-		} //whethher exception is there or not it will be executed so we can put here code that must get executed
-*/		
-		
-	/*	try {
-		
-			 int i=arr[4]; 
-				System.out.println("Inside Try Block");
-		}
-		
+		 
+/* try 
+{
+	int i= arr[4]; // Index 4 out of bounds for length 4 exception message will be printed due to inbuilt exception classes
+
+}
+
+catch(ArrayIndexOutOfBoundsException a)
+{
+	System.out.println(a);// Exception object will be printed
+
+}
+
+finally { 
+System.out.println("Safe"); //Whether exception handled or not it will print finally block 
+System.out.println("Out OF Exception");
+}*/
+
+		/* try 
+		 {
+		 	int i= arr[4]; // Index 4 out of bounds for length 4 exception message will be printed due to inbuilt exception classes
+
+		 }
+
+		 catch(ArrayIndexOutOfBoundsException a)
+		 {
+		 	System.out.println(a);//Exception object will be printed
+		 }
+		 
+		 System.out.println("Out OF Exception");//this will be printed
+	*/
 	
+		 /* try {
+			 System.out.println(2/0);
+		 }
+		 catch(ArithmeticException e)
+		 {
+			 System.out.println("abcd");//abcd will be printed as compiler will take it as handling code*/
+			/*System.out.println(e); 
+		 }
+		 System.out.println("Out OF Exception");*/  //java.lang.ArithmeticException: / by zero
 		
-		finally {
-			
-			System.out.println("Out Of Try-Catch");	
-			
-		} //whethher exception is there or not it will be executed and in this case it wil get executed first and then exception details will be printed
-	*/	
-		
-			try {
-	
-			System.out.println("Inside Try Block"); // This will be printed
-	}
-	
-	catch(ArrayIndexOutOfBoundsException e) //This will not be executed since no risky code is there
+	/* try 
 	{
-		
-		System.out.println(e);	
+		System.out.println(2/0);
 	}
 	
-	finally {
-		
-		System.out.println("Out Of Try-Catch");	//This will be printed first and then exception
-		
-	} 
-		
-			
-			try {
+finally
+	{
+	System.out.println("Safe"); //First finally will be printed if catch not there and then default handler will display exception object	
+	}
+	System.out.println("Out OF Exception"); */
 	
-			System.out.println(2/0);
-			System.out.println("Inside Try Block"); 
+	// try-finally ...finally and then exception
+	//try-catch... Normal execution
+	//try-catch-finally...Normal execution finally execute irrespective of exception status
+	//try-catch-Normal code statement ..Sequentially gets executed
+	// try-catch-finally used within method
+	
 	}
 	
-	catch(ArrayIndexOutOfBoundsException e) // Arithmatic Exception Message will be printed
-			{
-		
-		System.out.println(e);	
-	}
-	
-	finally {
-		
-		System.out.println("Out Of Try-Catch");	//This will be printed first and then exception
-		
-	} 
-			
-/*			try {}
-			catch{} // Not Allowed
-			finally {} */
-			
-	}
 }
