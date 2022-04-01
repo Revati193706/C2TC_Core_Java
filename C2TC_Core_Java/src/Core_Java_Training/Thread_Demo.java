@@ -15,6 +15,8 @@ public class Thread_Demo extends Thread //Thread1
 	public static void main(String[] args) //Thread2
 	
 	{
+		System.out.println(Thread.currentThread().getThreadGroup().getParent().getName());
+		//Display currentThread,name,parent,group
 		
 		Thread_Demo r=new Thread_Demo();
 		
