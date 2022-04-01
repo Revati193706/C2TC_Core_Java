@@ -4,7 +4,7 @@ import org.junit.jupiter.api.*;
 
 public class TDD_Demo {
 
-	@Disabled
+	@Disabled //Annotation..Metadata...Data about project..Project is data
 	public void sum() 
 	{
 		int a=10;
