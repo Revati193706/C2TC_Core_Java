@@ -12,7 +12,7 @@ public class Concurrent_Demo {
 		
 		ReentrantLock l=new ReentrantLock();		
 		l.lock();//Applies the lock
-		l.unlock();//Releases the locks
+		l.unlock();//Releases the locks on the thread
 		
 		System.out.println(l.isLocked()); //To check whether lock is applied or not
 		System.out.println(l.getQueueLength());//How many threads are waiting to acquire this lock
