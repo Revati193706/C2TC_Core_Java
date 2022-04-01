@@ -8,7 +8,7 @@ public class Thread_Demo extends Thread //Thread1
 	{
 		for(int i=0;i<=3;i++)
 		{
-			System.out.println("I am My Thread");
+			System.out.println("I am Thread1");
 		}
 	}
 	

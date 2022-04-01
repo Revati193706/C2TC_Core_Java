@@ -15,7 +15,7 @@ public class Runnable_Thread_Demo implements Runnable
 		Runnable_Thread_Demo r=new 	Runnable_Thread_Demo();
 		Thread t=new Thread(r);	
 
-		t.start();
+		t.start();//To start thread execution
 		
 	try {
 		t.join(); //Generates checked exception needs to be handled by throws/try-catch
