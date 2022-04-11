@@ -10,7 +10,7 @@ public class Collection_Demo {
 		
 		l.add(23); // Elements in the list
 		l.add(null); //Elements in the list
-		l.add("M11"); //Elements int he list
+		l.add("M11 Batch "); //Elements int he list
 	
 		
 		System.out.println(l.getClass()); // displays class name class java.util.ArrayList
