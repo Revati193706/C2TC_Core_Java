@@ -8,7 +8,7 @@ public class Generics_Demo {
 		gen<Float> g1 = new gen<Float>(); // Not here <> this must be a wrapper class/T
 
 		g.value = 2;
-		g1.value=2.5f;
+		g1.value=2.7f;
 		
 		g1.display();
 		g.display();

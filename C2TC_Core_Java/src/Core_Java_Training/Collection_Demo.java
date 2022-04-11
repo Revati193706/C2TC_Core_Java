@@ -22,8 +22,7 @@ public class Collection_Demo {
 		String [] arr=new String[3];
 
 		arr[0]="Revati";
-		arr[1]="Shweta";
-		
+		arr[1]="Shweta";		
 	/*	arr[2]=10; */ // this will give error since arrays provide type safety i.e once we have declare array name as string we cannot change the data type of that variable.
 		
 		             ArrayList l1=new ArrayList(); // We cannot provide data type here. This can accept data of any type so doesnt provide type saftey.
